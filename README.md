@@ -1,16 +1,15 @@
-# myapp
+# Foodio
 
-A new Flutter project.
+## Usage
 
-## Getting Started
+**Home Screen:**
+- The home screen displays a list of recipes.
+- You can search for recipes by entering ingredients in the search bar.
 
-This project is a starting point for a Flutter application.
+**Recipe Detail Screen:**
+- Tap on a recipe to view its details, including ingredients and instructions.
+- You can save the recipe as a favorite by tapping the "Save as Favorite" button.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+**Favorite Recipes Screen:**
+- Access your favorite recipes by tapping the "Favorites" tab in the bottom navigation bar.
+- You can delete a favorite recipe by tapping the delete icon next to it.
