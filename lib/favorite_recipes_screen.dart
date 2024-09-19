@@ -13,9 +13,10 @@ class _FavoriteRecipesScreenState extends State<FavoriteRecipesScreen> {
   @override
   void initState() {
     super.initState();
-    _loadFavorites();
+    _loadFavorites(); // Load favorite recipes when the screen is initialized
   }
 
+  // Method to load favorite recipes from the database
   Future<void> _loadFavorites() async {
     final data = await databaseHelper.getFavorites();
     setState(() {
@@ -40,7 +41,7 @@ class _FavoriteRecipesScreenState extends State<FavoriteRecipesScreen> {
               icon: Icon(Icons.delete),
               onPressed: () {
                 databaseHelper.deleteFavorite(favorite['id']);
-                _loadFavorites();
+                _loadFavorites(); // Reload favorite recipes after deletion
               },
             ),
           );

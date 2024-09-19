@@ -5,6 +5,7 @@ class ApiService {
   static const String apiKey = '2bc7a23425624474b30d36cbb44ed742';
   static const String baseUrl = 'https://api.spoonacular.com';
 
+  // Method to fetch recipes based on a search query
   Future<List<dynamic>> fetchRecipes(String query) async {
     final response = await http.get(Uri.parse('$baseUrl/recipes/complexSearch?query=$query&apiKey=$apiKey'));
     if (response.statusCode == 200) {
@@ -15,6 +16,7 @@ class ApiService {
     }
   }
 
+  // Method to fetch details of a specific recipe by its ID
   Future<dynamic> fetchRecipeDetails(int id) async {
     final response = await http.get(Uri.parse('$baseUrl/recipes/$id/information?apiKey=$apiKey'));
     if (response.statusCode == 200) {

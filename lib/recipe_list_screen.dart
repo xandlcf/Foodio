@@ -16,9 +16,10 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
   @override
   void initState() {
     super.initState();
-    _fetchRecipes('chicken');
+    _fetchRecipes('chicken'); // Fetch recipes with initial query
   }
 
+  // Method to fetch recipes based on a search query
   Future<void> _fetchRecipes(String query) async {
     final results = await apiService.fetchRecipes(query);
     setState(() {
