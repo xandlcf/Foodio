@@ -13,3 +13,5 @@
 **Favorite Recipes Screen:**
 - Access your favorite recipes by tapping the "Favorites" tab in the bottom navigation bar.
 - You can delete a favorite recipe by tapping the delete icon next to it.
+
+### PS: if you try and the api is not working it's because it has reached the free plan daily limit. You can try again on the next day.
