@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String apiKey = '2bc7a23425624474b30d36cbb44ed742';
+  static const String apiKey = ''; // Insert API key here
   static const String baseUrl = 'https://api.spoonacular.com';
 
   // Method to fetch recipes based on a search query
